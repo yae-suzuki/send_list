@@ -1,0 +1,2 @@
+ライブラリ　インストールするには
+python -m pip install --user　＜モジュール名＞
