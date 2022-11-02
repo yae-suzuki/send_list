@@ -21,7 +21,7 @@ def load_id_get_angle():
 
     #IDファイルを読み込んで動作角度の送信
     #ファイルのディレクトリの設定
-    dir_path = r'/home/uchida/ros2_ws_test/src/send_list/send_list/id_move_angle'
+    dir_path = r'/home/ubuntu/ros2_ws/src/send_list/send_list/id_move_angle'
     file_name = 'id_to_angle.csv'
     file_path = os.path.join(dir_path, file_name)
 
@@ -37,12 +37,15 @@ def load_id_get_angle():
 
     #move_angle_list type"list" -> type"str"
     str_pick_num = ""
-    for i in move_angle_list:
-        pick_num_1 = move_angle_list[i-1]
+    i = 0
+    for pick_num_1 in move_angle_list:
+        pick_num_1 = move_angle_list[i]
         point = ','
         str_pick_num = str_pick_num + str(pick_num_1) + point
         #print(str_pick_num)
         #print(type(str_pick_num))
+        i = i + 1
+        #print(i)
     move_angle_list = str_pick_num
 
     return move_angle_list 
@@ -59,3 +62,4 @@ def load_id_get_angle():
 
 if __name__ == '__main__':
     load_id_get_angle()
+
