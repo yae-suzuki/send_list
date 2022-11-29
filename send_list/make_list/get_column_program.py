@@ -16,11 +16,11 @@ def get_column():
     columu_num = []
 
     #ファイルのディレクトリの設定
-    dir_path = r'/home/uchida/ros2_ws_test/src/send_list/send_list/make_list/'
+    dir_path = r'/home/ubuntu/ros2_ws/src/send_list/send_list/make_list/'
     file_name = 'Shuwa_library.csv'
 
     #ファイルのディレクトリ　列取得用ファイル　パス
-    dir_path2 = r'/home/uchida/ros2_ws_test/src/send_list/send_list/make_list/' #/home/uchida/ros2_ws_test/src/send_list/send_list/make_list/get_column.csv
+    dir_path2 = r'/home/ubuntu/ros2_ws/src/send_list/send_list/make_list/' #/home/uchida/ros2_ws_test/src/send_list/send_list/make_list/get_column.csv
     file_name2 = 'get_column.csv'    
 
     #ディレクトリのパスとファイル名からファイルのパスを生成
