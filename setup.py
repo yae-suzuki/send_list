@@ -24,6 +24,7 @@ setup(
             'talker = send_list.publisher_member_function:main',
             'listener = send_list.subscriber_member_function:main',
             'stepping_move = send_list.subscriber_stepping_move:main',
+            'sub_servo = send_list.subscriber_servomotor_move:main',
         ],
     },
 )
